@@ -30,6 +30,10 @@ func (c Currencies) CurrencyByNumericCode(code string) *Currency {
 
 // CurrencyByCode returns the currency given the currency code defined as a constant.
 func (c Currencies) CurrencyByCode(code string) *Currency {
+	if code == RUR {
+		code = RUB
+	}
+
 	sc, ok := c[code]
 	if !ok {
 		return nil
