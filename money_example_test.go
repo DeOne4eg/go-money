@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Rhymond/go-money"
+	"github.com/DeOne4eg/go-money"
 )
 
 func ExampleMoney() {
